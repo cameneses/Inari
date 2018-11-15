@@ -1,14 +1,16 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+    <img src="../assets/inari/zorrito 1.png">
+
+  <button ion-button block color="primary" [navPush]="vacunas">
+    Vacunas
+  </button>
+  <button ion-button block color="primary" [navPush]="informacion">
+    Informacion Médica
+  </button>
+  <button ion-button block color="primary">
+    Calendario
+  </button>
+
 </ion-content>

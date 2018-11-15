@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Vacunas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <ion-list>
+      <ion-list-header>
+        Preferencias
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-icon name="alert" item-start color="danger"></ion-icon>
+        <ion-label>Enviar notificaciones</ion-label>
+        <ion-toggle color="secondary"></ion-toggle>
+      </ion-item>
+  
+      <button ion-item>
+        <ion-icon name="calendar" item-start color="primary"></ion-icon>
+        <ion-label>Asociar calendario</ion-label>
+        <ion-toggle color="secondary"></ion-toggle>
+      </button>
+      <button ion-item>
+        <ion-icon name="link" item-start color="secondary"></ion-icon>
+        <ion-label>Vincular con ficha</ion-label>
+        <ion-toggle color="secondary"></ion-toggle>
+      </button>
+    </ion-list>
+  
+    <ion-list>
+      <ion-list-header>
+        Listado de vacunas
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-icon name="color-filter" item-start color="secondary"></ion-icon>
+        <ion-label>Vacuna BCG</ion-label>
+        <button ion-button outline item-end (click)="showAlert1();">Revisar</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="color-filter" item-start color="secondary"></ion-icon>
+        <ion-label>Vacuna Pentavalente</ion-label>
+        <button ion-button outline item-end (click)="showAlert2();">Revisar</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="color-filter" item-start color="danger"></ion-icon>
+        <ion-label>Vacuna polio</ion-label>
+        <button ion-button outline item-end (click)="showAlert3();">Revisar</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="color-filter" item-start color="danger"></ion-icon>
+        <ion-label>Vacuna Tres Vírica</ion-label>
+        <button ion-button outline item-end (click)="showAlert4();">Revisar</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="color-filter" item-start color="danger"></ion-icon>
+        <ion-label>Vacuna Neumocócia</ion-label>
+        <button ion-button outline item-end (click)="showAlert5();">Revisar</button>
+      </ion-item>
+    </ion-list>
+  
+  
+  </ion-content>
+  
