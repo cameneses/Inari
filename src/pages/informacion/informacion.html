@@ -1,6 +1,57 @@
 <ion-content class="cards-bg social-cards">
 
-    <ion-card>
+
+  <ion-card *ngFor="let info of informacion"
+            (click)="revisarFicha(info)">
+    
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/doctor1.png">
+      </ion-avatar>
+      <h2>{{ info.doctor }}</h2>
+      <p>{{ info.date }}</p>
+    </ion-item>
+  
+    <img src="../../assets/imgs/hospital3.gif">
+  
+    <ion-card-content>
+      <p>{{ info.body }}</p>
+    </ion-card-content>
+  
+    <!-- <ion-row>
+        <ion-col>
+          <button ion-button color="primary" clear small icon-start>
+            <ion-icon name='text'></ion-icon>
+            No hay comentarios de otros profesionales
+          </button>
+        </ion-col>
+        <ion-col align-self-center text-center>
+          <ion-note>
+            Hace 12 días
+          </ion-note>
+        </ion-col>
+      </ion-row>
+   -->
+   
+  </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <ion-card>
     
       <ion-item>
         <ion-avatar item-start>
@@ -96,7 +147,7 @@
         </ion-col>
       </ion-row>
     
-    </ion-card>
+    </ion-card> -->
     
     
     </ion-content>
