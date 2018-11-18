@@ -1,159 +1,17 @@
-<ion-content class="cards-bg social-cards">
-
-
-  <ion-card *ngFor="let info of informacion"
-            (click)="revisarFicha(info)">
-    
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/doctor1.png">
-      </ion-avatar>
-      <h2>{{ info.doctor }}</h2>
-      <p>{{ info.date }}</p>
-    </ion-item>
-  
-    <img src="../../assets/imgs/hospital3.gif">
-  
-    <ion-card-content>
-      <p>{{ info.body }}</p>
-    </ion-card-content>
-  
-    <!-- <ion-row>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            No hay comentarios de otros profesionales
-          </button>
-        </ion-col>
-        <ion-col align-self-center text-center>
-          <ion-note>
-            Hace 12 días
-          </ion-note>
-        </ion-col>
-      </ion-row>
-   -->
-   
-  </ion-card>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <ion-card>
-    
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/imgs/doctor1.png">
-        </ion-avatar>
-        <h2>Dr. Marty McFly</h2>
-        <p>15 de Octubre de 2018</p>
-      </ion-item>
-    
-      <img src="../../assets/imgs/hospital3.gif">
-    
-      <ion-card-content>
-        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-      </ion-card-content>
-    
-      <ion-row>
-          <ion-col>
-            <button ion-button color="primary" clear small icon-start>
-              <ion-icon name='text'></ion-icon>
-              No hay comentarios de otros profesionales
-            </button>
-          </ion-col>
-          <ion-col align-self-center text-center>
-            <ion-note>
-              Hace 12 días
-            </ion-note>
-          </ion-col>
-        </ion-row>
-    
-    </ion-card>
-    
-    
-    <ion-card>
-    
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/imgs/doctor2.jpeg">
-        </ion-avatar>
-        <h2>Dr. Marcos Pérez</h2>
-        <p>21 de Agosto de 2018/p>
-      </ion-item>
-    
-      <img src="../../assets/imgs/hospital2.jpg">
-    
-      <ion-card-content>
-        <p>I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
-      </ion-card-content>
-    
-      <ion-row>
-          <ion-col>
-            <button ion-button color="primary" clear small icon-start>
-              <ion-icon name='text'></ion-icon>
-              3 comentarios de otros profesionales
-            </button>
-          </ion-col>
-          <ion-col align-self-center text-center>
-            <ion-note>
-              Hace 2 meses
-            </ion-note>
-          </ion-col>
-        </ion-row>
-    
-    </ion-card>
-    
-    
-    <ion-card>
-    
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/imgs/doctor3.jpeg">
-        </ion-avatar>
-        <h2>Dra. Felicia Mardones</h2>
-        <p>15 de Julio de 2018</p>
-      </ion-item>
-    
-      <img src="../../assets/imgs/hospital1.jpg">
-    
-      <ion-card-content>
-        <p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
-      </ion-card-content>
-    
-      <ion-row>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            5 comentarios de otros profesionales
-          </button>
-        </ion-col>
-        <ion-col align-self-center text-center>
-          <ion-note>
-            Hace 3 meses
-          </ion-note>
-        </ion-col>
-      </ion-row>
-    
-    </ion-card> -->
-    
-    
-    </ion-content>
-    
-    <style>
-      .social-cards ion-col {
-        padding: 0;
-      }
-    </style>
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title text-center>Información Médica</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="container">
+    <ul>
+      <li *ngFor="let info of informacion"(click)="revisarFicha(info)"><span></span>
+        <div>
+          <div class="title">{{ info.doctor }}</div>
+          <div class="info">{{ (info.body)?.substring(0,100) }}...</div>
+        </div> <span class="number"><span>{{ info.s_date }}</span> </span>
+      </li>
+    </ul>
+  </div>
+</ion-content>
