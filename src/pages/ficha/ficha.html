@@ -1,16 +1,19 @@
 
-
+<ion-header>
+    <ion-navbar color="dark">
+      <ion-title text-center>Detalle de la información</ion-title>
+    </ion-navbar>
+  </ion-header>
 <ion-content padding>
 
-<ion-card>
-
+<ion-card *ngIf="info.type=='ficha'">
     <ion-item>
         <ion-avatar item-start>
             <img src="../../assets/imgs/doctor1.png">
         </ion-avatar>
         <h2>{{ info.doctor }}</h2>
         <p>{{ info.date }}</p>
-        <p>{{ info.info.hola}}</p>
+        
     </ion-item>
 
     <img src="../../assets/imgs/hospital3.gif">
@@ -40,23 +43,56 @@
         </ion-row>
 
     </ion-card-content>
-
-    <!-- <ion-row>
-<ion-col>
-  <button ion-button color="primary" clear small icon-start>
-    <ion-icon name='text'></ion-icon>
-    No hay comentarios de otros profesionales
-  </button>
-</ion-col>
-<ion-col align-self-center text-center>
-  <ion-note>
-    Hace 12 días
-  </ion-note>
-</ion-col>
-</ion-row>
--->
-
 </ion-card>
+
+<ion-card *ngIf="info.type=='med'">
+    <ion-item>
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/doctor1.png">
+        </ion-avatar>
+        <h2>{{ info.name }}</h2>
+        <p>Recetado por: Juan Salas</p>
+        
+    </ion-item>
+    
+    <ion-card-content>
+        <p>{{ info.dosis }}</p>
+        <br>
+        <ion-row>
+            <p><b>Composición:</b></p>
+                <p>{{ info.info.com }}</p>
+        </ion-row>
+        <br>
+        <ion-row>
+            <p><b>Acción terapéutica:</b></p>
+                <p>{{ info.info.acc }}</p>
+        </ion-row>
+        <br>
+        <ion-row>
+            <p><b>Indicaciones:</b></p>
+               <p>{{ info.info.ind }}</p>
+        </ion-row>
+        <br>
+        <ion-row>
+            <p><b>Posología:</b></p>
+               <p>{{ info.info.pos }}</p>
+        </ion-row>
+        <br>
+        <ion-row>
+            <p><b>Contraindicaciones:</b></p>
+               <p>{{ info.info.con}}</p>
+        </ion-row>
+        <br>
+        <ion-row>
+            <p><b>Presentaciones:</b></p>
+               <p>{{ info.info.pres }}</p>
+        </ion-row>
+
+    </ion-card-content>
+</ion-card>
+
+
+
 
 
 </ion-content>
