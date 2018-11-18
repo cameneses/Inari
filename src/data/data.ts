@@ -88,6 +88,7 @@ export const MEDICAMENTOS =
 [   
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/2.jpg",
         s_date: "3:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -103,6 +104,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Bequium",
+        img: "../../assets/imgs/2.jpg",
         s_date: "7:00",
         dosis: "4 ml cada 8 horas",
         type: "med",
@@ -118,6 +120,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/2.jpg",
         s_date: "7:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -133,6 +136,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/2.jpg",
         s_date: "11:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -148,6 +152,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/3.jpg",
         s_date: "15:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -163,6 +168,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Bequium",
+        img: "../../assets/imgs/2.jpg",
         s_date: "15:00",
         dosis: "4 ml cada 8 horas",
         type: "med",
@@ -178,6 +184,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/2.jpg",
         s_date: "19:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -193,6 +200,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Salbutamol",
+        img: "../../assets/imgs/2.jpg",
         s_date: "23:00",
         dosis: "2 puff cada 4 horas",
         type: "med",
@@ -208,6 +216,7 @@ export const MEDICAMENTOS =
     },
     {
         name: "Bequium",
+        img: "../../assets/imgs/2.jpg",
         s_date: "23:00",
         dosis: "4 ml cada 8 horas",
         type: "med",
