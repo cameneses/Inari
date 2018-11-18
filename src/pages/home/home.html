@@ -1,10 +1,22 @@
 
-<ion-content padding>
+<ion-content padding class="fondo">
 
-    <img src="../assets/inari/zorrito 1.png">
+<ion-header>
+    <ion-toolbar color="dark">
+      <img src="../assets/inari/zorrito 4.png" width="40px" style="display:inline-block">
+      <ion-title class="titulo_" text-center>
+        Inari
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>  
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
 
-  
-  <button ion-button block color="primary" (click)="generatePage(info)">
+<div style="height: 50px;">
+</div>
+  <!--<button ion-button block color="primary" [navPush]="vacunas">
+    Vacunas
+  </button>
+  <button ion-button block color="primary" [navPush]="informacion">
     Informacion Médica
   </button>
   <button ion-button block color="primary" (click)="generatePage(med)">
@@ -13,5 +25,109 @@
   <button ion-button block color="primary">
     Calendario
   </button>
+  <ion-icon src="../assets/icon/ultrasound.svg"></ion-icon>
+  <ion-icon name="rose"></ion-icon>-->
+<!-- <div class="fondo2">
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col [navPush]="informacion" class="boton_inicio">
+        <img src="../assets/icon/book (1).svg" class="imagenes_botones">
+        <h6>Información Médica</h6>
+      </ion-col>
+      <ion-col class="boton_inicio">
+        <img src="../assets/icon/check (1).svg" class="imagenes_botones">
+        <h6>Exámenes</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col [navPush]="vacunas" class="boton_inicio">
+        <img src="../assets/icon/injection (1).svg" class="imagenes_botones">
+        <h6>Vacunas</h6>
+      </ion-col>
+      <ion-col class="boton_inicio">
+        <img src="../assets/icon/medicines (1).svg" class="imagenes_botones">
+        <h6>Medicamentos</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="boton_inicio">
+        <img src="../assets/icon/calendar (1).svg" class="imagenes_botones">
+        <h6>Calendario</h6>
+      </ion-col>
+      <ion-col class="boton_inicio">
+        <img src="../assets/icon/test (1).svg" class="imagenes_botones">
+        <h6>Autorizar a un Profesional</h6>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 
+<div class="container">
+  <ul style="padding: 0;">
+    <li>
+      <div>
+        <div class="titulo">dasds</div>
+        <div class="info">daghdjajdsa...</div>
+      </div>
+    </li>
+  </ul>
+</div> -->
+
+<ion-grid text-center>
+  <ion-row>
+    <ion-col class="container" (click)="generatePage(info)">
+        <ul style="padding: 0;">
+          <li>
+            <img src="../assets/icon/book (1).svg" class="imagenes_botones">
+            <div class="title">Información Médica</div>
+          </li>
+        </ul>
+    </ion-col>
+    <ion-col class="container">
+        <ul style="padding: 0;">
+          <li>
+            <img src="../assets/icon/check (1).svg" class="imagenes_botones">
+            <div class="title">Exámenes</div>
+          </li>
+        </ul>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="container" [navPush]="vacunas">
+        <ul style="padding: 0;">
+          <li>
+            <img src="../assets/icon/injection (1).svg" class="imagenes_botones">
+            <div class="title">Vacunas</div>
+          </li>
+        </ul>
+    </ion-col>
+    <ion-col class="container" (click)="generatePage(med)">
+        <ul style="padding: 0;">
+          <li>
+            <img src="../assets/icon/medicines (1).svg" class="imagenes_botones">
+            <div class="title">Medicamientos</div>
+          </li>
+        </ul>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="container">
+      <ul style="padding: 0;">
+        <li>
+          <img src="../assets/icon/calendar (1).svg" class="imagenes_botones">
+          <div class="title">Calendario</div>
+          <div style="color: rgba(0,0,0,0)" >dadsad</div>
+        </li>
+      </ul>
+    </ion-col>
+    <ion-col class="container">
+      <ul style="padding: 0;">
+        <li>
+          <img src="../assets/icon/check (1).svg" class="imagenes_botones">
+          <div class="title">Autorizar a un<br/>Profesional</div>
+        </li>
+      </ul>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
