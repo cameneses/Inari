@@ -1,8 +1,18 @@
 
 <ion-content padding class="fondo">
 
-    <img src="../assets/inari/zorrito 1.png">
+<ion-header>
+    <ion-toolbar>
+        <img src="../assets/inari/zorrito 3.png" width="40px" style="display:inline-block">
+        <ion-title class="titulo" text-center>
+          Inari
+        </ion-title>
+      </ion-toolbar>
+  </ion-header>  
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
 
+<div style="height: 50px;">
+</div>
   <!--<button ion-button block color="primary" [navPush]="vacunas">
     Vacunas
   </button>
@@ -19,31 +29,31 @@
     <ion-row>
       <ion-col [navPush]="informacion" class="boton_inicio">
         <img src="../assets/icon/book (1).svg" class="imagenes_botones">
-        <h4>Información Médica</h4>
+        <h6>Información Médica</h6>
       </ion-col>
       <ion-col class="boton_inicio">
         <img src="../assets/icon/check (1).svg" class="imagenes_botones">
-        <h4>Exámenes</h4>
+        <h6>Exámenes</h6>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col [navPush]="vacunas" class="boton_inicio">
         <img src="../assets/icon/injection (1).svg" class="imagenes_botones">
-        <h4>Vacunas</h4>
+        <h6>Vacunas</h6>
       </ion-col>
       <ion-col class="boton_inicio">
         <img src="../assets/icon/medicines (1).svg" class="imagenes_botones">
-        <h4>Medicamentos</h4>
+        <h6>Medicamentos</h6>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="boton_inicio">
         <img src="../assets/icon/calendar (1).svg" class="imagenes_botones">
-        <h4>Calendario</h4>
+        <h6>Calendario</h6>
       </ion-col>
       <ion-col class="boton_inicio">
         <img src="../assets/icon/test (1).svg" class="imagenes_botones">
-        <h4>Autorizar a un Profesional</h4>
+        <h6>Autorizar a un Profesional</h6>
       </ion-col>
     </ion-row>
   </ion-grid>
