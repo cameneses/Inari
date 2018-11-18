@@ -10,6 +10,8 @@ import {FichaPage} from "../index.paginas"
 export class InformacionPage {
 
   ficha:any = FichaPage;
+  data:any[] = [];
+  data_detail:any[] = [];
   informacion:any[] =
   [
     {
@@ -57,7 +59,8 @@ export class InformacionPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams)
   {
-    
+    this.data = navParams.get("data");
+    console.log(navParams);
   }
 
   revisarFicha(informacion:any)

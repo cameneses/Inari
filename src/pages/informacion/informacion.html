@@ -6,11 +6,11 @@
 <ion-content padding>
   <div class="container">
     <ul>
-      <li *ngFor="let info of informacion"(click)="revisarFicha(info)"><span></span>
+      <li *ngFor="let info of data"(click)="revisarFicha(info)"><span></span>
         <div>
-          <div class="title">{{ info.doctor }}</div>
+          <div class="title">{{ info.title }}</div>
           <div class="info">{{ (info.body)?.substring(0,100) }}...</div>
-        </div> <span class="number"><span>{{ info.s_date }}</span> </span>
+        </div> <span class="number"><span>{{ info.date }}</span> </span>
       </li>
     </ul>
   </div>

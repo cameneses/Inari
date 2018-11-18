@@ -3,10 +3,10 @@
 
     <img src="../assets/inari/zorrito 1.png">
 
-  <button ion-button block color="primary" [navPush]="vacunas">
+  <button ion-button block color="primary" (click)="generatePage(vac)">
     Vacunas
   </button>
-  <button ion-button block color="primary" [navPush]="informacion">
+  <button ion-button block color="primary" (click)="generatePage(info)">
     Informacion Médica
   </button>
   <button ion-button block color="primary">
