@@ -3,7 +3,7 @@
 
     <img src="../assets/inari/zorrito 1.png">
 
-  <button ion-button block color="primary" [navPush]="vacunas">
+  <!--<button ion-button block color="primary" [navPush]="vacunas">
     Vacunas
   </button>
   <button ion-button block color="primary" [navPush]="informacion">
@@ -12,5 +12,40 @@
   <button ion-button block color="primary">
     Calendario
   </button>
+  <ion-icon src="../assets/icon/ultrasound.svg"></ion-icon>
+  <ion-icon name="rose"></ion-icon>-->
+
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col [navPush]="informacion" style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/book (1).svg" style="width: 70%; height: auto;">
+        <h4>Información Médica</h4>
+      </ion-col>
+      <ion-col style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/check (1).svg" style="width: 70%; height: auto;">
+        <h4>Exámenes</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col [navPush]="vacunas" style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/injection (1).svg" style="width: 70%; height: auto;">
+        <h4>Vacunas</h4>
+      </ion-col>
+      <ion-col style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/medicines (1).svg" style="width: 70%; height: auto;">
+        <h4>Medicamentos</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/calendar (1).svg" style="width: 70%; height: auto;">
+        <h4>Calendario</h4>
+      </ion-col>
+      <ion-col style="background-color: #f4f5f7; border-radius: 25px; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+        <img src="../assets/icon/test (1).svg" style="width: 70%; height: auto;">
+        <h4>Autorizar a un Profesional</h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
