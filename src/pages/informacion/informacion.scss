@@ -4,13 +4,13 @@ page-informacion {
         height: 100vh;
         font-family: "Ubuntu", sans-serif;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bea2e7+0,86b7e7+100 */
-        background: #bea2e7;
+        background: #ffc1a7ff;
         /* Old browsers */
-        background: -moz-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+        background: -moz-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
         /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+        background: -webkit-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
         /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+        background: linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7',GradientType=0 );
         /* IE6-9 */
@@ -34,10 +34,11 @@ page-informacion {
     .container ul li {
         position: relative;
         margin-left: 30px;
+        margin-right: 20px;
         background-color: rgba(255, 255, 255, 0.2);
         padding: 14px;
         border-radius: 6px;
-        width: 250px;
+        /* width: 250px;*/
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
     }
     .container ul li:not(:first-child) {
@@ -58,7 +59,7 @@ page-informacion {
         border-radius: 50%;
         border: 2px solid #fff;
         position: absolute;
-        background: #86b7e7;
+        background: rgb(160,123,152);
         left: -5px;
         top: 0;
     }

@@ -2,9 +2,9 @@
 <ion-content padding class="fondo">
 
 <ion-header>
-    <ion-toolbar>
-        <img src="../assets/inari/zorrito 3.png" width="40px" style="display:inline-block">
-        <ion-title class="titulo" text-center>
+    <ion-toolbar color="dark">
+        <img src="../assets/inari/zorrito 4.png" width="40px" style="display:inline-block">
+        <ion-title class="titulo_" text-center>
           Inari
         </ion-title>
       </ion-toolbar>
@@ -24,7 +24,7 @@
   </button>
   <ion-icon src="../assets/icon/ultrasound.svg"></ion-icon>
   <ion-icon name="rose"></ion-icon>-->
-<div class="fondo2">
+<!-- <div class="fondo2">
   <ion-grid text-center>
     <ion-row>
       <ion-col [navPush]="informacion" class="boton_inicio">
@@ -58,4 +58,75 @@
     </ion-row>
   </ion-grid>
 </div>
+
+<div class="container">
+  <ul style="padding: 0;">
+    <li>
+      <div>
+        <div class="titulo">dasds</div>
+        <div class="info">daghdjajdsa...</div>
+      </div>
+    </li>
+  </ul>
+</div> -->
+
+<ion-grid text-center>
+  <ion-row>
+    <ion-col class="container" [navPush]="informacion">
+        <ul style="padding: 0;">
+            <li>
+              <img src="../assets/icon/book (1).svg" class="imagenes_botones">
+              <div class="titulo">Información Médica</div>
+            </li>
+          </ul>
+    </ion-col>
+    <ion-col class="container">
+        <ul style="padding: 0;">
+            <li>
+                <img src="../assets/icon/check (1).svg" class="imagenes_botones">
+                <div class="titulo">Exámenes</div>
+              </li>
+            </ul>
+          
+    </ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col class="container" [navPush]="vacunas">
+          <ul style="padding: 0;">
+              <li>
+                <img src="../assets/icon/injection (1).svg" class="imagenes_botones">
+                <div class="titulo">Vacunas</div>
+              </li>
+            </ul>
+      </ion-col>
+      <ion-col class="container">
+          <ul style="padding: 0;">
+              <li>
+                  <img src="../assets/icon/medicines (1).svg" class="imagenes_botones">
+                  <div class="titulo">Medicamientos</div>
+                </li>
+              </ul>
+            
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="container">
+            <ul style="padding: 0;">
+                <li>
+                  <img src="../assets/icon/calendar (1).svg" class="imagenes_botones">
+                  <div class="titulo">Calendario</div>
+                </li>
+              </ul>
+        </ion-col>
+        <ion-col class="container">
+            <ul style="padding: 0;">
+                <li>
+                    <img src="../assets/icon/check (1).svg" class="imagenes_botones">
+                    <div class="titulo">Autorizar a un Profesional</div>
+                  </li>
+                </ul>
+              
+        </ion-col>
+      </ion-row>
+</ion-grid>
 </ion-content>
