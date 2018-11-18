@@ -1,12 +1,26 @@
 page-home {
-    .boton_inicio {
-        background-color: lightgrey;
-        border-radius: 25px;
+
+    .fondo {   
+        background-image: linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
+        padding: -16px;
     }
 
-}
+    .fondo2 {
+        background-color:rgba(255,229,196,0.2);
+        padding: 16px;
+    }
 
-.boton_inicio {
-    background-color: lightgrey;
-    border-radius: 25px;
+    .boton_inicio {
+        background-color:rgba(255,229,196,0.2); 
+        border-radius: 25px; 
+        margin-right: 5px; 
+        margin-left: 5px; 
+        margin-bottom: 10px;
+    }
+
+    .imagenes_botones {
+        width: 70%; 
+        height: auto;
+        margin-top: 2px;
+    }
 }
