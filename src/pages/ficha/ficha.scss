@@ -4,16 +4,17 @@ page-ficha {
         height: 100vh;
         font-family: "Ubuntu", sans-serif;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bea2e7+0,86b7e7+100 */
-        background: #ffc1a7ff;
-        /* Old browsers */
-        background: -moz-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7',GradientType=0 );
-        /* IE6-9 */
+        // background: #ffc1a7ff;
+        // /* Old browsers */
+        // background: -moz-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
+        // /* FF3.6-15 */
+        // background: -webkit-linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
+        // /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to bottom right, #ffc1a7ff 0%, #f67e7dff 22%, #7d7aa2ff 89%, #5a819eff 100%);
+        // /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7',GradientType=0 );
+        // /* IE6-9 */
+        background-image: url('../assets/fondo-2.png');
     }
 
     .container ul {
