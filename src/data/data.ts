@@ -245,8 +245,10 @@ export const EXAMENES =
         img: '../../assets/imgs/4.jpg',
         date : '10 de marzo de 2017', 
         s_date: '10/03',
-        body: 'Antecedentes Clinicos: Tendinitos del supraespinoso. Hallazgos: Tendón de la porcion larga del biceps bien ubicado en la corredera bicipital, de patrón fibrilar conservado y sin aumento del líquido en su vaina',
-        type: "ex"
+        type: "ex",
+        ant: 'Tendinitos del supraespinoso.', 
+        hal: 'Tendón de la porcion larga del biceps bien ubicado en la corredera bicipital, de patrón fibrilar conservado y sin aumento del líquido en su vaina',
+        body: ''
 
     },
     {
@@ -255,7 +257,8 @@ export const EXAMENES =
         date: '15 de enero de 2014',
         s_date: '15/01',
         type: "ex",
-        body: 'Hallazgos: Ambos ejes venosos femoropoplíteos presentan trayetcto y calibre conservado con ausencia de materia ecogénico endoluminal, dichas venas no evidencian insudiciencia ante maniobra de Valsalva.'
+        hal: 'Ambos ejes venosos femoropoplíteos presentan trayetcto y calibre conservado con ausencia de materia ecogénico endoluminal, dichas venas no evidencian insudiciencia ante maniobra de Valsalva.',
+        body: ""
         
     },
     {
@@ -264,7 +267,8 @@ export const EXAMENES =
         date: '11 de julio de 2012',
         s_date: '11/07',
         type: "ex",
-        body: 'Hallazgos: Densidad ósea y alineamiento dentro de rangos normales. Partes blandas sin alteración. En las proyecciones visualizadas no evidencio signos de lesión ósea traumática o destructiva.'
+        hal: 'Densidad ósea y alineamiento dentro de rangos normales. Partes blandas sin alteración. En las proyecciones visualizadas no evidencio signos de lesión ósea traumática o destructiva.',
+        body: ""
         
     },
     {
@@ -273,7 +277,8 @@ export const EXAMENES =
         date: '11 de febrero de 2016',
         s_date: '11/02',
         type: "ex",
-        body: 'Hallazgos: Cuerpos mamarios densos con pequeña imagen modular retroareolar derecha. No observo microcalcificaciones sospechosas ni lesión espiculada. Linfonodos axilares bilaterales.'
+        hal: 'Cuerpos mamarios densos con pequeña imagen modular retroareolar derecha. No observo microcalcificaciones sospechosas ni lesión espiculada. Linfonodos axilares bilaterales.',
+        body: "" 
         
     }
 ];

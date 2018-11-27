@@ -12,9 +12,13 @@
 
           <div class="title" *ngIf="info.type=='med'">{{ info.name }}</div>
 
+          <div class="title" *ngIf="info.type=='ex'">{{ info.name }}</div>
+
           <div class="info" *ngIf="info.type=='ficha' ">{{ (info.body)?.substring(0,20) }}...</div>
 
-          <div class="info" *ngIf="info.type=='med'">{{ info.dosis }}...</div>
+          <div class="info" *ngIf="info.type=='med'">{{ (info.dosis)?.substring(0,20) }}...</div>
+
+          <div class="info" *ngIf="info.type=='ex' ">{{ (info.hal)?.substring(0,20) }}...</div>
 
         </div> <span class="number"><span>{{ info.s_date }}</span> </span>
       </li>
