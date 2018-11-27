@@ -240,5 +240,36 @@ export const VACUNAS =
 
 export const EXAMENES =
 [
+    {
+        name: 'Ecotomografía de hombro izquierdo',
+        img: '../../assets/imgs/4.jpg',
+        date : '10 de marzo de 2017', 
+        s_date: '10/03',
+        body: 'Antecedentes Clinicos: Tendinitos del supraespinoso. Hallazgos: Tendón de la porcion larga del biceps bien ubicado en la corredera bicipital, de patrón fibrilar conservado y sin aumento del líquido en su vaina'
 
+    },
+    {
+        name: 'Ecografía Doppler Venoso EE II Bilateral',
+        img: '../../assets/imgs/5.png',
+        date: '15 de enero de 2014',
+        s_date: '15/01',
+        body: 'Hallazgos: Ambos ejes venosos femoropoplíteos presentan trayetcto y calibre conservado con ausencia de materia ecogénico endoluminal, dichas venas no evidencian insudiciencia ante maniobra de Valsalva.'
+        
+    },
+    {
+        name: 'RX de Muñecas',
+        img: '../../assets/imgs/6.jpg',
+        date: '11 de julio de 2012',
+        s_date: '11/07',
+        body: 'Hallazgos: Densidad ósea y alineamiento dentro de rangos normales. Partes blandas sin alteración. En las proyecciones visualizadas no evidencio signos de lesión ósea traumática o destructiva.'
+        
+    },
+    {
+        name: 'Mamografía Bilateral',
+        img: '../../assets/imgs/7.jpg',
+        date: '11 de febrero de 2016',
+        s_date: '11/02',
+        body: 'Hallazgos: Cuerpos mamarios densos con pequeña imagen modular retroareolar derecha. No observo microcalcificaciones sospechosas ni lesión espiculada. Linfonodos axilares bilaterales.'
+        
+    },
 ];
