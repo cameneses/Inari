@@ -271,5 +271,5 @@ export const EXAMENES =
         s_date: '11/02',
         body: 'Hallazgos: Cuerpos mamarios densos con pequeña imagen modular retroareolar derecha. No observo microcalcificaciones sospechosas ni lesión espiculada. Linfonodos axilares bilaterales.'
         
-    },
+    }
 ];
