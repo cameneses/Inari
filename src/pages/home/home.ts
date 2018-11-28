@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { VacunasPage } from '../vacunas/vacunas';
 import { InformacionPage } from '../informacion/informacion';
-import {FICHAS, MEDICAMENTOS} from "../../data/data";
-import {QrScannerPage} from '../qr-scanner/qr-scanner';
+import {FICHAS, MEDICAMENTOS, EXAMENES} from "../../data/data";
 
 
 @Component({
@@ -17,6 +16,7 @@ export class HomePage {
 
   info:any[] = FICHAS;
   med:any[] = MEDICAMENTOS;
+  ex:any[] = EXAMENES;
 
   constructor(public navCtrl: NavController) {
 

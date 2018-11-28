@@ -6,12 +6,13 @@
   </ion-header>
 <ion-content padding>
 
+<!-- Ficha médica -->
 <ion-card *ngIf="info.type=='ficha'">
     <ion-item>
         <ion-avatar item-start>
             <img src="../../assets/imgs/doctor1.png">
         </ion-avatar>
-        <h2>{{ info.doctor }}</h2>
+        <h2 text-wrap>{{ info.doctor }}</h2>
         <p>{{ info.date }}</p>
         
     </ion-item>
@@ -21,23 +22,26 @@
     <ion-card-content>
         <p>{{ info.body }}</p>
         <br>
-        <ion-row>
-            <p>Medicamentos</p>
-            <ion-item *ngFor="let med of info.med">
+        <ion-row text-wrap *ngIf="info.med && info.med.length > 0">
+            <p><b>Medicamentos</b></p>
+            <ion-item text-wrap *ngFor="let med of info.med">
                 <p>{{ med }}</p>
             </ion-item>
         </ion-row>
 
-        <ion-row>
-            <p>Recomendaciones</p>
-            <ion-item *ngFor="let reco of info.reco">
+        <ion-row text-wrap *ngIf="info.reco && info.reco.length > 0">
+            <p><b>Recomendaciones</b></p>
+            <!-- <ion-item *ngIf="!info.reco || info.reco.length === 0">
+                <p>No indicado</p>
+            </ion-item> -->
+            <ion-item text-wrap *ngFor="let reco of info.reco">
                 <p>{{ reco }}</p>
             </ion-item>
         </ion-row>
 
-        <ion-row>
-            <p>Exámenes indicados</p>
-            <ion-item *ngFor="let ex of info.ex">
+        <ion-row text-wrap *ngIf="info.ex && info.ex.length > 0">
+            <p><b>Exámenes indicados</b></p>
+            <ion-item text-wrap *ngFor="let ex of info.ex">
                <p>{{ ex }}</p>
             </ion-item>
         </ion-row>
@@ -45,12 +49,13 @@
     </ion-card-content>
 </ion-card>
 
+<!-- Medicamentos -->
 <ion-card *ngIf="info.type=='med'">
     <ion-item>
         <ion-avatar item-start>
             <img src="../../assets/imgs/doctor1.png">
         </ion-avatar>
-        <h2>{{ info.name }}</h2>
+        <h2 text-wrap>{{ info.name }}</h2>
         <p>Recetado por: Juan Salas</p>
         
     </ion-item>
@@ -58,36 +63,80 @@
     <img [src]=info.img>
 
     <ion-card-content>
-        <p>{{ info.dosis }}</p>
-        <br>
-        <ion-row>
-            <p><b>Composición:</b></p>
+        <p><b>Dosis</b></p>
+        <ion-item text-wrap>
+            <p>{{ info.dosis }}</p>
+        </ion-item>
+
+        <ion-row *ngIf="info.info.com && info.info.com != ''">
+            <p><b>Composición</b></p>
+            <ion-item text-wrap>
                 <p>{{ info.info.com }}</p>
+            </ion-item>
         </ion-row>
-        <br>
-        <ion-row>
-            <p><b>Acción terapéutica:</b></p>
+        
+        <ion-row *ngIf="info.info.acc && info.info.acc != ''">
+            <p><b>Acción terapéutica</b></p>
+            <ion-item text-wrap>
                 <p>{{ info.info.acc }}</p>
+            </ion-item>
         </ion-row>
-        <br>
-        <ion-row>
-            <p><b>Indicaciones:</b></p>
-               <p>{{ info.info.ind }}</p>
+        
+        <ion-row *ngIf="info.info.ind && info.info.ind != ''">
+            <p><b>Indicaciones</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.info.ind }}</p>
+            </ion-item>
         </ion-row>
-        <br>
-        <ion-row>
-            <p><b>Posología:</b></p>
-               <p>{{ info.info.pos }}</p>
+        
+        <ion-row *ngIf="info.info.pos && info.info.pos != ''">
+            <p><b>Posología</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.info.pos }}</p>
+            </ion-item>
         </ion-row>
-        <br>
-        <ion-row>
-            <p><b>Contraindicaciones:</b></p>
-               <p>{{ info.info.con}}</p>
+        
+        <ion-row *ngIf="info.info.con && info.info.con != ''">
+            <p><b>Contraindicaciones</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.info.con}}</p>
+            </ion-item>
         </ion-row>
-        <br>
+        
         <ion-row>
-            <p><b>Presentaciones:</b></p>
-               <p>{{ info.info.pres }}</p>
+            <p><b>Presentaciones</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.info.pres }}</p>
+            </ion-item>
+        </ion-row>
+
+    </ion-card-content>
+</ion-card>
+
+<!-- Exámenes -->
+<ion-card *ngIf="info.type=='ex'">
+    <ion-item>
+        <h2 text-wrap>{{ info.name }}</h2>
+        <p>{{ info.date }}</p>
+        
+    </ion-item>
+
+    <img [src]=info.img>
+
+    
+    <ion-card-content>
+        <ion-row *ngIf="info.hal && info.hal != ''">
+            <p><b>Hallazgos</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.hal }}</p>
+            </ion-item>
+        </ion-row>
+
+        <ion-row  *ngIf="info.ant && info.ant != ''">
+            <p><b>Antecedentes Clinicos</b></p>
+            <ion-item text-wrap>
+                <p>{{ info.ant }}</p>
+            </ion-item>
         </ion-row>
 
     </ion-card-content>
