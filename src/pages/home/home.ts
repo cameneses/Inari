@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { VacunasPage } from '../vacunas/vacunas';
 import { InformacionPage } from '../informacion/informacion';
 import {FICHAS, MEDICAMENTOS} from "../../data/data";
+import {QrScannerPage} from '../qr-scanner/qr-scanner';
 
 
 @Component({
@@ -12,6 +13,7 @@ import {FICHAS, MEDICAMENTOS} from "../../data/data";
 export class HomePage {
   vacunas:any = VacunasPage;
   informacion:any = InformacionPage;
+  qrscanner:any = QrScannerPage;
 
   info:any[] = FICHAS;
   med:any[] = MEDICAMENTOS;

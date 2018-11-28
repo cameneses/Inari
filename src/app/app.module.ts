@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import {VacunasPage, InformacionPage, FichaPage} from "../pages/index.paginas";
+import { QRScanner } from '@ionic-native/qr-scanner';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {VacunasPage, InformacionPage, FichaPage} from "../pages/index.paginas";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    QRScanner
   ]
 })
 export class AppModule {}
