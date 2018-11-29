@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { VacunasPage } from '../vacunas/vacunas';
 import { InformacionPage } from '../informacion/informacion';
 import {FICHAS, MEDICAMENTOS, EXAMENES} from "../../data/data";
+import {QrScannerPage} from '../qr-scanner/qr-scanner';
 
 
 @Component({
